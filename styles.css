@@ -79,31 +79,32 @@ footer {
 }
 /* Estilos para la tienda */
 .producto {
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 2px solid #ffcc00;
-    padding: 20px;
-    margin: 20px auto;
-    width: 50%;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid #ffcc00 !important;
+    padding: 20px !important;
+    margin: 20px auto !important;
+    width: 50% !important;
+    border-radius: 10px !important;
 }
 
 .producto h3 {
-    color: #ffcc00;
+    color: #ffcc00 !important;
+    font-size: 1.5em !important;
 }
 
 .producto p {
-    font-size: 1.1em;
+    font-size: 1.1em !important;
 }
 
 .producto input[type="submit"] {
-    background-color: #ffcc00;
-    color: #121212;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1em;
-    cursor: pointer;
+    background-color: #ffcc00 !important;
+    color: #121212 !important;
+    border: none !important;
+    padding: 10px 15px !important;
+    font-size: 1em !important;
+    cursor: pointer !important;
 }
 
 .producto input[type="submit"]:hover {
-    background-color: #ff5722;
+    background-color: #ff5722 !important;
 }
