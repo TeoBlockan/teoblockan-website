@@ -46,8 +46,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setTimeout(() => {
         console.log("Renderizando botones de PayPal...");
-        renderizarBotonPago("#pago-guerrero-azteca", "Rango Guerrero Azteca", "10.00");
+        renderizarBotonPago("#pago-guerrero-azteca", "Rango Guerrero Azteca", "5.00");
+        renderizarBotonPago("#pago-guerrero-aguila", "Rango Guerrero Águila", "10.00");
         renderizarBotonPago("#pago-guerrero-jaguar", "Rango Guerrero Jaguar", "15.00");
         renderizarBotonPago("#pago-sumo-sacerdote", "Rango Sumo Sacerdote", "20.00");
+        renderizarBotonPago("#pago-tlatoani-supremo", "Rango Tlatoani Supremo", "30.00");
     }, 2000);
 });
