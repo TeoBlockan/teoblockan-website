@@ -77,3 +77,33 @@ footer {
     padding: 15px;
     font-size: 0.9em;
 }
+/* Estilos para la tienda */
+.producto {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ffcc00;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    color: #ffcc00;
+}
+
+.producto p {
+    font-size: 1.1em;
+}
+
+.producto input[type="submit"] {
+    background-color: #ffcc00;
+    color: #121212;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.producto input[type="submit"]:hover {
+    background-color: #ff5722;
+}
