@@ -1,5 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
+    if (typeof paypal === "undefined") {
+        console.error("El SDK de PayPal no está cargando correctamente.");
+        return;
+    }
+
     function renderizarBotonPago(idElemento, descripcion, precio) {
+        const elemento = document.querySelector(idElemento);
+        if (!elemento) {
+            console.error("Elemento no encontrado:", idElemento);
+            return;
+        }
+
         paypal.Buttons({
             style: {
                 layout: 'vertical',
@@ -30,7 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }).render(idElemento);
     }
 
-    // Renderizar botones para cada rango
-    renderizarBotonPago("#pago-guerrero-azteca", "Rango Guerrero Azteca", "10.00");
-    renderizarBotonPago("#pago-sumo-sacerdote", "Rango Sumo Sacerdote", "20.00");
+    setTimeout(() => {
+        renderizarBotonPago("#pago-guerrero-azteca", "Rango Guerrero Azteca", "10.00");
+        renderizarBotonPago("#pago-sumo-sacerdote", "Rango Sumo Sacerdote", "20.00");
+    }, 1500); // Espera 1.5 segundos para evitar problemas de carga
 });
