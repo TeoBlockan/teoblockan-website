@@ -45,3 +45,19 @@ document.addEventListener("DOMContentLoaded", function() {
     opacity: 1;
     transform: translateY(0);
 }
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('.scroll-reveal, .lore-img');
+
+    function revealOnScroll() {
+        elements.forEach(element => {
+            const position = element.getBoundingClientRect().top;
+            const screenHeight = window.innerHeight;
+            if (position < screenHeight * 0.85) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+});
