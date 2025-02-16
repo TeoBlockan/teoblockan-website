@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const serverIP = "TU_IP_AQUÍ"; // Reemplaza con la IP de tu servidor
-
+    const serverIP = "mc.hypixel.net"; // IP de prueba (Hypixel)
+    
     fetch(`https://api.mcstatus.io/v2/status/java/${serverIP}`)
         .then(response => response.json())
         .then(data => {
