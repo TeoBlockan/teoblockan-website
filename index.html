@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> >
+<head <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeoBlockán - Servidor de Minecraft </title>
@@ -45,10 +45,30 @@
     </section>
 
     <section id="tienda">
-        <h2>Tienda</h2>
-        <p>Adquiere rangos y objetos exclusivos.</p>
-    </section>
+    <h2>Tienda</h2>
+    <p>Adquiere rangos y objetos exclusivos para apoyar el servidor.</p>
 
+    <!-- Rango Guerrero Azteca -->
+    <div class="producto">
+        <h3>Rango Guerrero Azteca</h3>
+        <p>Acceso a comandos exclusivos y cosméticos especiales.</p>
+        <script src="https://www.paypal.com/sdk/js?client-id=BAAS6otG4m807Mp2dhmlnHYfV4pkf9_i4NNa4kmj_5d19pfgb9crxeYAiWPN5mdGqzu-oTiuAoZZsrTPUE&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+<div id="paypal-container-VB2445S754BHA"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "VB2445S754BHA",
+  }).render("#paypal-container-VB2445S754BHA")
+</script>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="teoblockan@gmail.com">
+            <input type="hidden" name="item_name" value="Rango Guerrero Azteca">
+            <input type="hidden" name="amount" value="5.00">
+            <input type="hidden" name="currency_code" value="MXN">
+            <input type="submit" value="Comprar ahora con PayPal">
+        </form>
+    </div>
+</section>
     <footer>
         <p>© 2025 TeoBlockán - Servidor de Minecraft</p>
     </footer>
