@@ -67,52 +67,21 @@
     <div class="producto">
         <h3>Rango Guerrero Azteca</h3>
         <p>Acceso a comandos exclusivos y cosméticos especiales.</p>
-        <script src="https://www.paypal.com/sdk/js?client-id=BAAS6otG4m807Mp2dhmlnHYfV4pkf9_i4NNa4kmj_5d19pfgb9crxeYAiWPN5mdGqzu-oTiuAoZZsrTPUE&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
-<div id="paypal-container-VB2445S754BHA"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "VB2445S754BHA",
-  }).render("#paypal-container-VB2445S754BHA")
-</script>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-            <input type="hidden" name="cmd" value="_xclick">
-            <input type="hidden" name="business" value="teoblockan@gmail.com">
-            <input type="hidden" name="item_name" value="Rango Guerrero Azteca">
-            <input type="hidden" name="amount" value="5.00">
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="submit" value="Comprar ahora con PayPal">
-<!-- Rango Guerrero Águila -->
-    <div class="producto">
-        <h3>Rango Guerrero Águila</h3>
-        <p>Incluye beneficios del rango Guerrero Azteca + habilidades especiales.</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-            <input type="hidden" name="cmd" value="_xclick">
-            <input type="hidden" name="business" value="teoblockan@gmail.com">
-            <input type="hidden" name="item_name" value="Rango Guerrero Águila">
-            <input type="hidden" name="amount" value="10.00">
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="submit" value="Comprar ahora con PayPal">
-        </form>
+        <div id="pago-guerrero-azteca"></div>
     </div>
 
-   <!-- Rango Sumo Sacerdote -->
+    <!-- Rango Sumo Sacerdote -->
     <div class="producto">
         <h3>Rango Sumo Sacerdote</h3>
         <p>Todos los beneficios anteriores + acceso exclusivo a eventos VIP.</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-            <input type="hidden" name="cmd" value="_xclick">
-            <input type="hidden" name="business" value="teobloakan@gmail.com">
-            <input type="hidden" name="item_name" value="Rango Sumo Sacerdote">
-            <input type="hidden" name="amount" value="20.00">
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="submit" value="Comprar ahora con PayPal">
-        </form>
-    </div>>
+        <div id="pago-sumo-sacerdote"></div>
+    </div>
 </section>
-    <footer>
-        <p>© 2025 TeoBlockán - Servidor de Minecraft</p>
-    </footer>
-     <script src="script.js"> </script>
+
+<!-- Cargar el SDK de PayPal -->
+<script src="https://www.paypal.com/sdk/js?client-id=AY4US-Ki41QY7CsxXL8Zwah_tmZgkQWJ3epuMcuR9Pk366Xlau_U6jdwEajBvp10LTBvmt3t7aWsbNw9&currency=USD"></script>
+<script src="paypal.js"></script>
+
 </body>
 </html>
 
