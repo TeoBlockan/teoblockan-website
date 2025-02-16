@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 });
 /* Estilos para imágenes del lore */
-.lore-img {
+lore-img {
     width: 90%;
     margin: 20px 0;
     border-radius: 10px;
