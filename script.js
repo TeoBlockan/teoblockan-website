@@ -22,4 +22,20 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error("Error al obtener el estado del servidor:", error);
             document.getElementById("jugadores").textContent = "No disponible";
         });
+
+    // Animaciones de entrada al hacer scroll
+    const elements = document.querySelectorAll('.scroll-reveal, .lore-img');
+
+    function revealOnScroll() {
+        elements.forEach(element => {
+            const position = element.getBoundingClientRect().top;
+            const screenHeight = window.innerHeight;
+            if (position < screenHeight * 0.85) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
 });
