@@ -177,3 +177,84 @@ footer {
     background-color: #ffcc00; /* Amarillo más brillante */
     transform: scale(1.1);
 }
+/* 📜 Sección de Lore */
+#lore {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.lore-img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.7);
+}
+
+/* 📌 Botón para explorar el Lore */
+.btn-lore {
+    display: inline-block;
+    background-color: #d4af37;
+    color: black;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-lore:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+}
+/* 🎭 Sección de Facciones */
+#facciones {
+    background-color: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#facciones h2 {
+    color: #ffcc00;
+}
+
+#facciones ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#facciones li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+#facciones li:hover {
+    transform: scale(1.05);
+}
+
+/* 🔥 Imágenes de las facciones */
+.faccion-img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid #ffcc00;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faccion-img:hover {
+    transform: scale(1.1);
+}
