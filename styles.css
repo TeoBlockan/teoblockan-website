@@ -280,21 +280,33 @@ footer {
     text-align: center;
     margin: 20px 0;
 }
+/* 🔹 Navegación mejorada */
+.nav-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
 
 .btn-nav {
     display: inline-block;
     background-color: #1e3a5f;
     color: white;
-    padding: 12px 18px;
+    padding: 12px 20px;
     margin: 5px;
     font-size: 1.1em;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, border 0.3s ease-in-out;
 }
 
 .btn-nav:hover {
     background-color: #0a4d68;
     transform: scale(1.1);
+    border: 2px solid #ffcc00;
+}
+
+/* 🔹 Efecto de separación entre los botones */
+.nav-buttons a {
+    margin: 10px;
 }
