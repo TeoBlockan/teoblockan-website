@@ -310,3 +310,33 @@ footer {
 .nav-buttons a {
     margin: 10px;
 }
+/* 🎭 Botones de Facciones */
+.facciones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-faccion {
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.btn-faccion:hover {
+    background-color: #0a4d68;
+    transform: scale(1.05);
+    border: 2px solid #ffcc00;
+}
